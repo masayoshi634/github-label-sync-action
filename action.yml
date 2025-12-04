@@ -24,12 +24,12 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
       with:
-        node-version: 18.x
+        node-version: 22.x
     - run: npm install -g github-label-sync
       shell: bash
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
       with:
         token: ${{ inputs.github_token }}
         repository: ${{ inputs.source_repository }}
