@@ -10,4 +10,4 @@ permissions:
 
 jobs:
   build:
-    uses: r7kamura/workflows/.github/workflows/release-action.yml@v0.8.0
+    uses: r7kamura/workflows/.github/workflows/release-action.yml@188a151bcd356344550773f723742a3fccbc6ef9 # v0.8.0
